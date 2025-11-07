@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+  {{ parent() }}
+  <nav>Section admin</nav>
+{% endblock %}
+
+{% block body %}
+  <main>
+    <h1>Espace Administration</h1>
+    {% block admin_content %}{% endblock %}
+  </main>
+{% endblock %}
